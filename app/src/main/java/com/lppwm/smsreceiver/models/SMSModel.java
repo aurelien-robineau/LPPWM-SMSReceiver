@@ -3,8 +3,8 @@ package com.lppwm.smsreceiver.models;
 public class SMSModel {
     private static int lastId = 0;
 
-    private int id;
-    private String body;
+    private final int id;
+    private final String body;
 
     public SMSModel(String body) {
         this.id = lastId++;

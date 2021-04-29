@@ -12,18 +12,21 @@ import com.lppwm.smsreceiver.R;
 import com.lppwm.smsreceiver.models.SMSModel;
 import com.lppwm.smsreceiver.models.StatModel;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class StatAdapter extends RecyclerView.Adapter<StatAdapter.ViewHolder> {
     private List<StatModel> statList = new ArrayList<>();
 
-    private MainActivity activity;
+    private final MainActivity activity;
 
     public StatAdapter(MainActivity activity) {
         this.activity = activity;
     }
 
+    @NotNull
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.statistic_layout, parent, false);

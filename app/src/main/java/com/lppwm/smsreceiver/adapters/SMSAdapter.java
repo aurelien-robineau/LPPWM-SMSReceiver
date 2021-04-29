@@ -11,18 +11,21 @@ import com.lppwm.smsreceiver.MainActivity;
 import com.lppwm.smsreceiver.R;
 import com.lppwm.smsreceiver.models.SMSModel;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class SMSAdapter extends RecyclerView.Adapter<SMSAdapter.ViewHolder> {
     private List<SMSModel> SMSList = new ArrayList<>();
 
-    private MainActivity activity;
+    private final MainActivity activity;
 
     public SMSAdapter(MainActivity activity) {
         this.activity = activity;
     }
 
+    @NotNull
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.sms_layout, parent, false);

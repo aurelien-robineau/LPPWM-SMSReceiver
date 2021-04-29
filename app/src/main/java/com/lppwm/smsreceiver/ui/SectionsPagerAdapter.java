@@ -12,6 +12,8 @@ import com.lppwm.smsreceiver.MainActivity;
 import com.lppwm.smsreceiver.R;
 import com.lppwm.smsreceiver.ui.tabs.*;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
  * one of the sections/tabs/pages.
@@ -29,6 +31,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         mActivity = activity;
     }
 
+
+    @NotNull
     @Override
     public Fragment getItem(int position) {
         switch (position) {
