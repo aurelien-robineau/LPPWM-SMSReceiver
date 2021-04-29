@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SMSReceiver</string>
+    <string name="tab_text_1">SMS</string>
+    <string name="tab_text_2">Stats</string>
+</resources>
