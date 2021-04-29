@@ -33,11 +33,9 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                SMSTab smsTab = SMSTab.getInstance();
-                return smsTab;
+                return SMSTab.getInstance();
             case 1:
-                StatsTab statsTab = StatsTab.getInstance();
-                return statsTab;
+                return StatsTab.getInstance();
             default:
                 return null;
         }
